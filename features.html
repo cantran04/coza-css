@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style/setting.css">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/shop-cart.css">
+    <link rel="stylesheet" href="style/media.css"> 
+
+</head>
+<body>
+
+    <!-- header starts -->
+
+    <header class="header">
+        <section class="header-top">
+            <div>
+                <span>Free shipping for standard order over $100</span>
+            </div>
+            <div>
+                <a href="">Help & FAQs</a>
+                <a href="">My Account</a>
+                <a href="">EN</a>
+                <a href="">USD</a>
+                <div></div>
+            </div>
+        </section>
+        <section class="header-bottom" id="header-bottom">
+            <div class="logo">
+                <!-- <H1>COZA <span>STORE</span></H1> -->
+                <a href="index.html"><img src="asset/images/logo-01.png.webp" alt=""></a>
+            </div>
+            <div class="header-menu1">
+                <nav class="nav ">
+                    <span class="dropdown">
+                        <span  class="dropbtn active">Home
+                            <!-- <i class="fa fa-caret-down"></i> -->
+                          </span>
+                          <div class="dropdown-content-home">
+                            <a href="index.html">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                          </div>
+                    </span>
+                    <a href="shop.html">Shop</a>
+                    <a href="features.html">Features</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="about.htmml">About</a>
+                    <a href="contact.html">Contact</a>
+                    
+                </nav>
+                <div class="icons">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-solid fa-cart-shopping count" ></i>
+                    <i class="fa-solid fa-heart count"></i>
+                </div>
+                <i class="fa-solid fa-bars" id="toggle-bars"></i>
+                <nav class="dropdown-menu">
+                    <div class="wrapper-dropdown-menu">
+                        <span class="dropdown">
+                            <span  class="dropbtn active">Home
+                                <!-- <i class="fa fa-caret-down"></i> -->
+                              </span>
+                              <div class="dropdown-content-home">
+                                <a href="#">Link 1</a>
+                                <a href="#">Link 2</a>
+                                <a href="#">Link 3</a>
+                              </div>
+                        </span>
+                        <a href="#">Shop</a>
+                        <a href="#">Features</a>
+                        <a href="#">Blog</a>
+                        <a href="#">About</a>
+                        <a href="#">Contact</a>
+                        
+                        <div class="icons">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <i class="fa-solid fa-cart-shopping count" ></i>
+                            <i class="fa-solid fa-heart count"></i>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </section>
+    </header>
+    <!-- header ends -->
+
+
+    <section class="shoping-cart">
+        <div>
+            <a href="">Home</a>
+            <i class="fa-solid fa-chevron-right"></i>
+            <span>Shoping Cart</span>
+        </div>
+    </section>
+
+
+
+    <section class="shop-product-detail">
+        <div>
+            <table>
+                <tr>
+                  <th>PRODUCT	</th>
+                  <th>PRICE</th>
+                  <th>QUANTITY	</th>
+                  <th>TOTAL</th>
+                </tr>
+                <tr>
+                  <td class="product-img">
+                    <img src="asset/images/item-cart-04.jpg.webp" alt="">
+                    <span>	Fresh Strawberries</span>
+                  </td>
+                  <td>$36.00</td>
+                  <td>
+                    <div>
+                        <span class="muti-add">-</span>
+                        <input type="text" id="sl" value="1">
+                        <span class="muti-add">+</span>
+                    </div>
+                  </td>
+                  <td>$36.00</td>
+                </tr>
+                <tr>
+                    <td class="product-img">
+                      <img class="" src="asset/images/item-cart-05.jpg.webp" alt="">
+                      <span>	Fresh Strawberries</span>
+                    </td>
+                    <td>$36.00</td>
+                    <td>
+                        <div>
+                            <span class="muti-add">-</span>
+                            <input type="text" id="sl" value="1">
+                            <span class="muti-add">+</span>
+                        </div>
+                    </td>
+                    <td>$36.00</td>
+                  </tr>                       
+                  <tr>
+                    <td colspan="4">
+                        <input type="text" placeholder="Coupon Code" class="coupon-code">
+                        <button>APPLY COUPON</button>
+                        <button>UPDATE CART</button>
+                    </td>
+                    
+                  </tr>
+              
+              </table>
+        </div>
+        <div class="CART-TOTALS">
+           <table>     
+            <tr>
+                <th colspan="2">
+                <h3>CART TOTALS</h3>
+                </th>
+            </tr>
+            <tr>
+                <th>Subtotal:</th>
+                <td>$79.65</td>
+            </tr>
+         
+            <tr>
+                <th id="shipping">Shipping: </th>
+                <td class="td-shipping">
+                    <p>There are no shipping methods available. Please double check your address, or contact us if you need any help.</p>
+                    <span>CALCULATE SHIPPING</span>
+                    <!-- <div class="country">
+                        <button class="countrybtn">Select a country ..<i class="fa-solid fa-chevron-down sl-i"></i></button>
+                        <div class="country-content">
+                          <a href="#">US</a>
+                          <a href="#">Link 2</a>
+                          <a href="#">Link 3</a>
+                        </div>
+                    </div> -->
+                    <select class="country">
+                        <option value="0">Select a country..</option>
+                        <option value="1">USA</option>
+                        <option value="2">JAPAN</option>
+                        <option value="3">KOREA</option>
+                    <input type="text" placeholder="State / country">
+                    <input type="text" placeholder="Postcode / Zip">
+                    <button>UPDATE TOTALS</button>
+                </td>
+            </tr>
+
+            <tr>
+                <th>Total:</th>
+                <td>$79.65</td>
+            </tr>
+            <tr>
+                <td colspan="2"><button class="checked-out">PROCEED TO CHECKOUT</button></td>          
+            </tr>
+           </table>
+        </div>
+    </section>
+
+
+    <!-- footer starts -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div >
+                <h6>CATEGORIES</h6>
+                <ul>
+                    <li><a href="">Women</a></li>
+                    <li><a href="">Men</a></li>
+                    <li><a href="">Shoes</a></li>
+                    <li><a href="">Watches</a></li>
+                </ul>
+            </div>
+            <div>
+                <h6>HELP</h6>
+                <ul>
+                    <li><a href="">Women</a></li>
+                    <li><a href="">Men</a></li>
+                    <li><a href="">Shoes</a></li>
+                    <li><a href="">Watches</a></li>
+                </ul>
+            </div>
+            <div>
+                <h6>GET IN TOUCH</h6>
+                <span>Any questions? Let us know in store at 8th floor, 379 Hudson St, New York, NY 10018 or call us on (+1) 96 716 6879</span>
+                <div>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-pinterest"></i>
+                </div>
+            </div>
+            <div>
+                <h6>NEWSLETTER</h6>
+                
+                <label for="">
+                    <input type="text" placeholder="email@example.com">
+                </label>
+                <button class="subcribe">SUBCRIBE</button>
+            </div>
+        </div>
+        <div class="footter-bottom">
+            <div class="footer-icons">
+                <img src="asset/icons/icon-pay-01.png.webp" alt="">
+                <img src="asset/icons/icon-pay-02.png.webp" alt="">
+                <img src="asset/icons/icon-pay-03.png.webp" alt="">
+                <img src="asset/icons/icon-pay-04.png.webp" alt="">
+                <img src="asset/icons/icon-pay-05.png.webp" alt="">
+            </div>
+            <span>Copyright ©2023 All rights reserved | This template is made with  by <a href="">Colorlib</a></span>
+        </div>
+
+
+    </footer>
+    <!-- footer ends -->
+
+
+
+
+    <!-- <script>
+        document.querySelector('.countrybtn').addEventListener('click',() =>{
+            if(document.querySelector('.country-content').style.display==='flex'){
+                document.querySelector('.country-content').style.display='none';
+                document.querySelector('.sl-i').classList.remove('fa-chevron-up');
+                document.querySelector('.sl-i').classList.add('fa-chevron-down');
+            }else{
+                document.querySelector('.country-content').style.display='flex';
+                document.querySelector('.sl-i').classList.remove('fa-chevron-down');
+                document.querySelector('.sl-i').classList.add('fa-chevron-up');
+
+            }
+        })
+    </script> -->
+    
+
+    <script>
+        
+        // heart active starts
+        let heart_active = document.querySelector('.fa-heart');
+        heart_active.onclick = () =>{
+            heart_active.classList.toggle('active');
+        }
+        // heart active ends
+    </script>
+
+    <script>
+        // show hide dropmenu starts 
+    let btn_bars = document.querySelector('#toggle-bars');
+    let dropdown_menu = document.querySelector('.dropdown-menu');
+
+    btn_bars.onclick = () => {
+         if(  dropdown_menu.style.display=='block'){
+             dropdown_menu.style.display='none'
+         }else{
+             dropdown_menu.style.display='block'
+         }
+     }
+     //show hide dropmenu ends 
+    </script>
+</body>
+</html>
